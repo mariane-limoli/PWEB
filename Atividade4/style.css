@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(218, 214, 222);
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+sans-serif;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+}
+.page {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    
+}
+.container {
+    background-color: rgb(179, 154, 202);
+    display: flex;
+    flex-direction: column;
+   width: 500px;
+    padding: 1%;
+    margin: 5%;
+    border-radius: 5%;
+    float: left;
+    margin-top: 150px;
+  
+}
+
+.card {
+    
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    width: auto;
+    margin: 20px 20px 20px 20px;
+
+    
+    padding: 2%;
+    text-align: justify;
+    
+}
+
+.content {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.inside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inside p {
+    margin-top: -5px;
+    
+}
+
+ img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    
+}
+ hr{
+    margin-top: -10px;
+    width: 100%;
+ }
+
+ aside {
+    background-color: #ffffff;
+    border: 5px solid #c79cd2;
+    padding: 10px;
+    float: right;
+    width: 200px;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 150px;
+    border-radius: 5%;
+
+ }
+
+ #asideCard {
+    font-size: smaller;
+    margin-top: -10px;
+
+ }
+
+ h1 {
+    background-color:  rgb(179, 154, 202);
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    margin: -10px -10px 0 -10px;
+    padding: 3%;
+    height: 10vw;
+    width: 100vw;
+   
+  
+ }
