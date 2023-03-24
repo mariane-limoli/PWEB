@@ -96,8 +96,7 @@ sans-serif;
     position: fixed;
     margin: -10px -10px 0 -10px;
     padding: 3%;
-    height: 10vw;
-    width: 100vw;
+    width: calc(100%);
    
   
  }
