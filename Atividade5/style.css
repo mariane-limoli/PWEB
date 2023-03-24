@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex: 1 1 100vw; */
+    background-color: rgb(255, 255, 255);
+    
+}
+
+header {
+    display: flex;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    width: 100vw;
+    height: 50px;
+    color: white;
+    background-color: black;
+    align-items: center;
+    position: fixed;
+}
+
+header img {
+    margin-left: 5px;
+}
+
+header h1 {
+    margin-left: 15px;
+
+}
+
+main {
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 60px;
+    /* flex: 20 1 500px; */
+    /* height: calc(100vw - 300px); */
+}
+
+aside {
+    display: flex;
+    margin-top: 100px;
+    margin-right: 50px;
+    flex: 1 1 200px;
+    float: right;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    align-items: flex-end;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: auto;
+    width: 100%;
+    height: 30px;
+    color: white;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+   
+
+
+}
+
+.alinhamento {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 50px;
+    
+}
+
+.imagem {
+    width: 170px;
+    height: 100px;
+}
+
+.card {
+    width: 200px;
+    max-width: 200px;
+    display: flex;
+    /* flex: 1 1; */
+    flex-direction: column;
+    padding: 10px;
+    height: 340px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+a {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: large;
+    color: rgb(87, 85, 166);
+
+}
+
+p {
+    font-family: sans-serif;
+    font-size: smaller;
+    text-align: justify;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: smaller;
+    text-align: justify;
+}
+
+li {
+    list-style-type: none;
+}
+
+li::before {
+    content: ">>";
+    margin-right: 0.5em;
+}
+
+.div_aside {
+
+    width: 200px;
+    margin: 0 5px;
+
+}
+
+#publi {
+    width: 200px;
+    height: 200px;
+}
+
+main h2 {
+    font-family: sans-serif;
+    margin-left: 150px;
+}
