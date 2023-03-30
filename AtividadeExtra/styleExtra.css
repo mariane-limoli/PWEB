@@ -1,0 +1,62 @@
+/* body {
+    padding: 10px;
+} */
+
+.container-box {
+    height: 500px;
+    width: 500px;
+}
+
+@media (min-width: 200px) and (max-width: 420px) {
+    .container-box {
+        background-color: rgb(75, 75, 75);
+    }
+    h1::after {
+        content: "Cinza";
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .container-box {
+        background-color: rgb(248, 141, 0);
+    }
+    h1::after {
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container-box {
+        background-color: rgb(248, 0, 207);
+    }
+    h1::after {
+        content: "Rosa";
+    }
+}
+
+@media (min-width: 1021px) and (max-width: 1080px) {
+    .container-box {
+        background-color: rgb(248, 0, 0);
+    }
+    h1::after {
+        content: "Vermelho";
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .container-box {
+        background-color: rgb(0, 17, 248);
+    }
+    h1::after {
+        content: "Azul";
+    }
+}
+
+@media (min-width: 1367) and (max-width: 1920) {
+    .container-box {
+        background-color: rgb(248, 211, 0);
+    }
+    h1::after {
+        content: "Amarelo";
+    }
+}
