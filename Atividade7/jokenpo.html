@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <script src="jokenpo.js"></script>
+    <link rel="stylesheet" href="jokenpo.css">
+</head>
+<body>
+    <h1>Vamos jogar Jokenpô?</h1>
+    
+    <label for="">Escolha uma opção:</label>
+    <br>
+    <div class="botoes">
+        <button onclick="play(1)"><img src="pedra.jpg" alt="" ></button>
+        <button onclick="play(2)"><img src="papel.jpg" alt=""></button>
+        <button onclick="play(3)"><img src="tesoura.jpg" alt=""></button>
+        
+    </div>
+
+
+    <br>
+    <p>O computador escolheu: </p>
+    <img id="imagem" >
+    <br>
+    <label>Resultado:</label>
+    <input type="text" id="resultado" disabled>
+</body>
+<footer>Criado por Mariane Limoli Almeida</footer>
+</html>
