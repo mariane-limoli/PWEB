@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8</title>
+    <script src="listar_ordenar.js"></script>
+    <style>
+        body{
+            background-color: rgb(159, 194, 149);
+            font-family:Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        input, button{
+            width: 120px;
+            height: 20px;
+            border-radius: 5px;
+            text-align: center;
+            border: 0;
+            margin: 3px;
+        }
+
+       .botoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando funções</h1>
+    <h3>Uma que receba três números como parâmetros e retorne o maior deles. </h3>
+    <h3>Outra que receba três números e coloque em ordem crescente.</h3>
+
+    <div class="container">
+
+        <label for="" >Primeiro número: </label>
+        <input type="number" id="num1">
+        <br>
+        <label for="" >Segundo número: </label>
+        <input type="number" id="num2">
+        <br>
+        <label for="" >Terceiro número: </label>
+        <input type="number" id="num3">
+        <br>
+        <div class="botoes">
+
+            <input type="number" id="maior" disabled>
+            <button onclick="retornaMaior()">Retona maior</button>
+            <br>
+            
+            <input type="text" id="crescente" disabled>
+            <button onclick="retornaCresc()">Ordem crescente</button>
+        </div>
+    </div>
+    <button onclick="limpar()">Limpar</button>
+</body>
+</html>
