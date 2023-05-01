@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade11</title>
+    <script src="objetos.js"></script>
+</head>
+
+<body>
+    <h1>Atividade 11 - Objetos</h1>
+    <section>
+
+
+        <p><strong>Exercício 1:</strong> Crie uma função construtora para o Retângulo receber(x,y) ou seja, base e altura, com um método para
+            calculara área. Criar um objeto e executar o método que calcula aárea. Não precisa utilizar get e set na
+            função construtora.</p>
+
+        <label for="">Base (m):</label>
+        <input type="number" id="base">
+        <label for="">Altura (m):</label>
+        <input type="number" id="altura">
+        <br>
+        <input type="text" name="" id="area" disabled>
+        <button onclick="retornaArea()">Calcular área</button>
+
+
+    </section>
+    <section>
+
+        <p><strong>Exercício 2: </strong>Crie uma nova função tipo Conta, com as propriedades </p>
+        <ul>
+            <li>nome correntista</li>
+            <li>banco</li>
+            <li>numero da conta</li>
+            <li>saldo</li>
+        </ul>
+        <p>
+            Crie utilizando herança duas novas funções: <strong>Corrente</strong> com Saldo Especial e
+            <strong>Poupanca</strong> com Juros e Data Vencimento. Receber os dados via get e set. Criar um objeto de
+            cada uma: <strong>Corrente</strong> e <strong>Poupanca</strong> e mostrar os seus
+            dados.
+        </p>
+        <div>
+
+            <label for="">Nome:</label>
+            <input type="text" id="nome"><br>
+            <label for="">Banco:</label>
+            <input type="text" id="banco"><br>
+            <label for="">Número da conta:</label>
+            <input type="number" id="numConta"><br>
+            <label for="">Saldo:</label>
+            <input type="number" id="saldo">
+
+            <p>Esta conta é?</p>
+            <button onclick="liberarInputsCorrente()">Corrente</button>
+            <button onclick="liberarInputsPopanca()">Poupança</button><br>
+
+
+            <!-- corrente -->
+            <div id="Corrente" style="display: none;">
+
+                <label for="">Saldo Especial:</label>
+                <input type="number" id="saldoEspecial"><br>
+                <button onclick="exibirDadosCorrente()">Criar objeto</button>
+            </div>
+
+            <!-- poupança -->
+            <div id="Poupanca" style="display:none;">
+
+                <label for="">Juros:</label>
+                <input type="number" id="juros"><br>
+                <label for="">Data vencimento:</label>
+                <input type="date" id="dtVenc"><br>
+                <button onclick="exibirDadosPoupanca()">Criar objeto</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(253, 252, 252);
+    }
+
+    section {
+        max-width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(62, 73, 240, 0.274);
+        text-align: justify;
+        padding: 20px;
+        align-items: center;
+        box-shadow: 0 0 4px rgb(110, 110, 110);
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    input {
+        text-align: center;
+        width: 130px;
+        margin-bottom: 10px;
+    }
+
+    #area {
+        color: green;
+        font-weight: bolder;
+    }
+</style>
+
+</html>
