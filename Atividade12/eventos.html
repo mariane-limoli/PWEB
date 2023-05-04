@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body style="display: flex; align-items: center; flex-direction: column; background-color: bisque;" >
+    <p>
+      Encontre na rede 3 figuras: janela aberta, janelafechada e janela
+      quebrada. Criar uma página que no carregamento mostra ajanela fechada com
+      um título “Abra a Janela”. 
+      Se mover com o mouse sobre a imagem da janela fechada, mostra a janela aberta (abre a janela), 
+      se sair com o mouse da imagem mostra a janelafechada (fecha a janela). 
+      Se clicar sobre a imagem mostra a imagem da janela quebrada(quebra a janela).
+    </p>
+    <h1 id="titulo">Janela Fechada</h1>
+    <img width="500px" id ="janela" onmouseover="abrirJanela()" onclick="quebrarJanela()" 
+         onmouseout="fecharJanela()" src="janelafechada.png" alt="">
+    
+    <script>
+    
+    function abrirJanela() {
+        var janela = document.getElementById("janela");
+        var texto = document.getElementById('titulo');
+        janela.src = "janelaaberta.png";
+        titulo.innerHTML = "Janela Aberta"
+        
+    }
+    function quebrarJanela() {
+        var janela = document.getElementById("janela");
+        janela.src = "janelaquebra.png";
+
+        var texto = document.getElementById('titulo');
+        titulo.innerHTML = "Janela Quebrada"
+    }
+
+    function fecharJanela() {
+        var janela = document.getElementById("janela");
+        janela.src = "janelafechada.png";
+
+        var texto = document.getElementById('titulo');
+        titulo.innerHTML = "Janela Fechada"
+    }
+
+
+    
+    
+    </script>
+  </body>
+</html>
