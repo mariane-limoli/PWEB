@@ -1,52 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body style="display: flex; align-items: center; flex-direction: column; background-color: bisque;" >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Eventos JavaScript | Mariane</title>
+  <style>
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin: 50px 20px 50px 20px;
+   background: url(https://cdn.shopify.com/s/files/1/0293/7192/4613/files/granilite_desktop.png?v=1625085631);
+    }
+    div{
+      padding: 50px;
+      width: 400px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: bisque;
+      /* box-shadow: 2px 2px 4px lightgray; */
+      box-shadow: 0 0 1em rgb(185, 178, 178);;
+    }
+
+    img {
+      width: 400px;
+      height: 350px;
+      object-fit: cover;
+      object-position: center;
+    }
+    h2{
+      font-family: Arial, sans-serif;
+      color: rgb(148, 66, 66);
+      border: 1px dashed;
+     padding-left: 100px;
+     padding-right: 100px;      
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+
     <p>
-      Encontre na rede 3 figuras: janela aberta, janelafechada e janela
-      quebrada. Criar uma página que no carregamento mostra ajanela fechada com
-      um título “Abra a Janela”. 
-      Se mover com o mouse sobre a imagem da janela fechada, mostra a janela aberta (abre a janela), 
-      se sair com o mouse da imagem mostra a janelafechada (fecha a janela). 
-      Se clicar sobre a imagem mostra a imagem da janela quebrada(quebra a janela).
+      Encontre na rede 3 figuras: <strong>janela aberta, janela fechada e janela
+        quebrada</strong>. Criar uma página que no carregamento mostra a janela fechada com um título “Abra a Janela”.
+    <ul>
+      <li> Se mover com o mouse sobre a imagem da janela fechada, mostra a janela aberta (abre a janela).</li>
+      <li>Se sair com o mouse da imagem mostra a janela fechada (fecha a janela).</li>
+      <li> Se clicar sobre a imagem mostra a imagem da janela quebrada (quebra a janela).</li>
+    </ul>
     </p>
-    <h1 id="titulo">Janela Fechada</h1>
-    <img width="500px" id ="janela" onmouseover="abrirJanela()" onclick="quebrarJanela()" 
-         onmouseout="fecharJanela()" src="janelafechada.png" alt="">
-    
-    <script>
-    
+
+
+    <h2 id="titulo">Janela Fechada</h1>
+    <img id="janela" onmouseover="abrirJanela()" onclick="quebrarJanela()" onmouseout="fecharJanela()"
+      src="janelafechada.png" alt="">
+
+    <h2 id="titulo2">Janela Fechada</h1>
+    <img width="400px" id="janela2" src="janelafechada.png" alt="">
+
+  </div>
+  <script>
+    //  primeira janela
     function abrirJanela() {
-        var janela = document.getElementById("janela");
-        var texto = document.getElementById('titulo');
-        janela.src = "janelaaberta.png";
-        titulo.innerHTML = "Janela Aberta"
-        
+      var janela = document.getElementById("janela");
+      var texto = document.getElementById('titulo');
+      janela.src = "janelaaberta.png";
+      titulo.innerHTML = "Janela Aberta"
+
     }
     function quebrarJanela() {
-        var janela = document.getElementById("janela");
-        janela.src = "janelaquebra.png";
+      var janela = document.getElementById("janela");
+      janela.src = "janelaquebra.png";
 
-        var texto = document.getElementById('titulo');
-        titulo.innerHTML = "Janela Quebrada"
+      var texto = document.getElementById('titulo');
+      titulo.innerHTML = "Janela Quebrada"
     }
 
     function fecharJanela() {
-        var janela = document.getElementById("janela");
-        janela.src = "janelafechada.png";
+      var janela = document.getElementById("janela");
+      janela.src = "janelafechada.png";
 
-        var texto = document.getElementById('titulo');
-        titulo.innerHTML = "Janela Fechada"
+      var texto = document.getElementById('titulo');
+      titulo.innerHTML = "Janela Fechada"
+    }
+    //fim primeira janela
+
+    //segunda janela
+    function abrirJanela2() {
+      janela2.src = "janelaaberta.png";
+      titulo2.innerHTML = "Janela Aberta"
+    }
+    function quebrarJanela2() {
+      janela2.src = "janelaquebra.png";
+      titulo2.innerHTML = "Janela Quebrada"
+    }
+    function fecharJanela2() {
+      janela2.src = "janelafechada.png";
+      titulo2.innerHTML = "Janela Fechada"
     }
 
+    var janela2 = document.getElementById("janela2");
+    var texto2 = document.getElementById('titulo2');
+    document.getElementById('janela2').addEventListener('mouseover', abrirJanela2);
+    document.getElementById('janela2').addEventListener('click', quebrarJanela2);
+    document.getElementById('janela2').addEventListener('mouseout', fecharJanela2);
 
-    
-    
-    </script>
-  </body>
+
+  </script>
+</body>
+
 </html>
