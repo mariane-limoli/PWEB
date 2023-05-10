@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM | Mariane</title>
+    <script>
+        function tudoMaiuc() {
+            document.getElementById('texto').value = document.getElementById('texto').value.toUpperCase();
+            document.forms.teste.opcao1.checked = true;
+            document.forms.teste.opcao2.checked = false;
+        }
+
+        function tudoMinus() {
+            document.getElementById('texto').value = document.getElementById('texto').value.toLowerCase();
+            document.forms.teste.opcao1.checked = false;
+            document.forms.teste.opcao2.checked = true;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="teste">
+        Texto:
+        <input type="text" id="texto" name="texto" size="20" maxlength="20">
+        <br>Maiúsculas
+        <input type="checkbox" id="opcao1" name="opcao1" value="1" onclick="tudoMaiuc()">
+        <br>Minúsculas
+        <input type="checkbox" id="opcao2" name="opcao2" value="2" onclick="tudoMinus()">
+
+    </form>
+</body>
+
+
+</html>
