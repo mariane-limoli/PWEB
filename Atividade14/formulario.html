@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | Mariane</title>
+    <link rel="stylesheet" href="formulario.css">
+   
+</head>
+
+<body>
+    <form name="form1">
+        <div name="div0" class="container">
+            <h1 class='elementosContainer'>Formulário Principal</h1>
+            Nome:
+            <input name='nome' class='elementosContainer' id='nome' type="text" size="30">
+            E-mail:
+            <input name="email" class='elementosContainer' id='email' type="text" size="30">
+            Comentários:
+            <textarea name="comentarios" class='elementosContainer' id='comentarios' type="text" rows="5"></textarea>
+        </div>
+        <div class="pesquisa">
+            <h2>Pesquisa</h2>
+            <p>Primeira vez na página?</p>
+            <div class="check">
+                <label>
+                    <input type="radio" class="radio" name="check">
+                    Sim
+                </label>
+                <label>
+                    <input type="radio" class="radio" name="check">
+                    Não
+                </label>
+            </div>
+        </div>
+        <div class="botoes">
+            <button id="btnEnviar">Enviar</button>
+            <button id="btnLimpar">Limpar</button>
+        </div>
+    </form>
+    <footer> © Mariane Limoli, 2023.</footer>
+</body>
+<script src='formulario.js'></script>
+</html>
