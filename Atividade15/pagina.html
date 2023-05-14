@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+    <link rel="stylesheet" href="pagina.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Página de Curos da Fatec</h1>
+        <p>Criar uma página utilizando JavaScript que execute as seguintes funções:</p>
+        <ul>
+            <li>A página principal deve conter uma caixa de seleção com nomes de cursos (os cursos da Fatec Sorocaba).</li>
+            <li> Quando o usuário escolher um curso, deverá aparecer uma caixa confirmando se a janela contendo o curso deve realmente ser aberta.</li>
+            <li>Caso o usuário confirme (clicando em Ok), o curso escolhido deverá ser carregado em uma nova janela (coloque algumas informações sobre ele) com 600x300 pixels.</li>
+            <li> Use o evento onchange do tag 'select' para carregar o curso escolhido</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Escolha um curso:</h2>
+        <select id="cursos" onchange="abrirCurso()">
+            <option value="">Selecione um curso</option>
+            <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+            <option value="ea">Eletrônica Automotiva</option>
+            <option value="fm">Fabricação Mecânica</option>
+            <option value="ge">Gestão Empresarial EAD</option>
+            <option value="gq">Gestão da Qualidade</option>
+            <option value="log">Logística</option>
+            <option value="ma">Manufatura Avançada</option>
+            <option value="poli">Polímeros</option>
+        </select>
+    </div>
+
+</body>
+<script src="pagina.js"></script>
+</html>
