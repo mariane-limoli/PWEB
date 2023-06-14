@@ -1,0 +1,24 @@
+body {
+  background-image: radial-gradient(#898783, #aea9a9);
+  text-align: center;
+}
+#cc {
+  background-image: radial-gradient(#f5f3f0, #33fafa, #f15908);
+}
+#pp {
+  background-image: radial-gradient(#f5f3f0, #fa9d33, #08c6f1);
+}
+#Vem_da_CC {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 20px;
+  border-radius: 120px;
+  background-image: radial-gradient(#b7b7b3, #1beaf5);
+}
+#Vem_da_CP {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 20px;
+  border-radius: 120px;
+  background-image: radial-gradient(#f4f3f0, #ec9c07);
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="janela.css" rel="stylesheet" />
+    <script type="text/javascript" src="janela.js"></script>
+
+    <title>Interagindo com imagens de janela</title>
+  </head>
+  <body onload="fecharJnanela(fechar)">
+    <script>
+      document.getElementById("mudarH1")= mudarH1;
+    </script>
+    <img
+      id="janelas"
+      src="img/aberta.png"
+      onmouseover="abrirJanela(this)"
+      onmouseout="fecharJnanela(this)"
+      ondblclick="quebrarJanela(this)"
+    />
+    <h1 id="mudarH1">
+      🥶 <br />
+      Janela aberta
+    </h1>
+  </body>
+</html>

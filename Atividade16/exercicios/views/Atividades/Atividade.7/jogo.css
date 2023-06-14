@@ -1,0 +1,10 @@
+h1 {
+  text-align: center;
+  font-size: 35px;
+  background-image: linear-gradient(#e100e9, #ffc400);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  font-family: fira code, Verdana, Geneva, Tahoma, sans-serif;
+}

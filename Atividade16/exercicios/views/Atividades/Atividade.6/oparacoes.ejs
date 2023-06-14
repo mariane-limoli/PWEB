@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Atividade 6 operações</title>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="operacoes.js"></script>
+  </head>
+  <body>
+    <div>
+      <input
+        class="botaosoma"
+        type="button"
+        value="Soma"
+        onclick="document.getElementById('resultadosoma').value = soma()"
+      />
+      <input class="texto" type="text" id="resultadosoma" readonly />
+    </div>
+    <div>
+      <br />
+      <input
+        class="botaosub"
+        type="button"
+        value="Subtração"
+        onclick="document.getElementById('resultadosub').value = subtracao()"
+      />
+      <input class="texto" type="text" id="resultadosub" readonly />
+    </div>
+    <div>
+      <br />
+      <input
+        class="botaoprod"
+        type="button"
+        value="Produto"
+        onclick="document.getElementById('resultadoprod').value = produto()"
+      />
+      <input class="texto" type="text" id="resultadoprod" readonly />
+    </div>
+    <div>
+      <br />
+      <input
+        class="botaodiv"
+        type="button"
+        value="Divisão"
+        onclick="document.getElementById('resultadodiv').value = divisao()"
+      />
+      <input class="texto" type="text" id="resultadodiv" readonly />
+    </div>
+    <div>
+      <br />
+      <input
+        class="botaoresto"
+        type="button"
+        value="Resto"
+        onclick="document.getElementById('resultadoresto').value = resto()"
+      />
+      <input class="texto" type="text" id="resultadoresto" readonly />
+    </div>
+  </body>
+</html>

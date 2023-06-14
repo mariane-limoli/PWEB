@@ -1,0 +1,74 @@
+body {
+  background-color: rgba(243, 239, 189, 0.308);
+}
+div {
+  position: relative;
+  text-align: center;
+}
+.botao {
+  font-family: fira Code, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: larger;
+  text-align: center;
+  height: 4em;
+  width: 12em;
+  border-radius: 6px;
+  background-color: rgba(127, 255, 212, 0.514);
+}
+.botaosoma {
+  font-family: fira Code, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: larger;
+  text-align: center;
+  height: 4em;
+  width: 12em;
+  border-radius: 6px;
+  background-color: rgba(173, 7, 214, 0.514);
+}
+.botaosub {
+  font-family: fira Code, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: larger;
+  text-align: center;
+  height: 4em;
+  width: 12em;
+  border-radius: 6px;
+  background-color: rgba(127, 255, 212, 0.514);
+}
+.botaoprod {
+  font-family: fira Code, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: larger;
+  text-align: center;
+  height: 4em;
+  width: 12em;
+  border-radius: 6px;
+  background-color: rgba(190, 252, 46, 0.514);
+}
+.botaodiv {
+  font-family: fira Code, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: larger;
+  text-align: center;
+  height: 4em;
+  width: 12em;
+  border-radius: 6px;
+  background-color: rgba(247, 179, 33, 0.514);
+}
+.botaoresto {
+  font-family: fira Code, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: larger;
+  text-align: center;
+  height: 4em;
+  width: 12em;
+  border-radius: 6px;
+  background-color: rgba(252, 1, 1, 0.514);
+}
+.texto {
+  font-family: fira Code, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: larger;
+  text-align: center;
+  height: 4em;
+  width: 12em;
+  border-radius: 6px;
+  background-color: rgba(215, 216, 176, 0.514);
+}
+
+input:hover {
+  cursor: pointer;
+}

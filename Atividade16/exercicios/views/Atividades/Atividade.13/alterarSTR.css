@@ -1,0 +1,21 @@
+body {
+  background-image: radial-gradient(#8bddd4cb, #908f8ff0);
+  padding: 20px;
+  height: 500px;
+}
+div {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#idNome {
+  min-width: 300px;
+}
+#btnApagar {
+  background-color: rgb(188, 195, 195);
+  border-radius: 12px;
+  width: 120px;
+  cursor: pointer;
+}
+#btnApagar:hover {
+  background-color: rgb(221, 255, 127);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="alterarSTR.css" rel="stylesheet" />
+    <script type="text/javascript" src="alterarSTR.js"></script>
+    <title>🔤🔄🔠 Alterar Strings</title>
+  </head>
+  <body>
+    <header>
+      <center><h1>🔠 MAISCULA 🔤 minuscula</h1></center>
+    </header>
+    <form
+      action="Entradas"
+      method=""
+      name="formularioNome"
+      id="formularioNome"
+      onsubmit="return checarDados();"
+    >
+      <div id="principal">
+        Nome
+        <input name="idNome" type="text" id="idNome" />
+        <!-- 
+        Sobre Nome
+        <input name="idSobreNome" type="text" id="idSobreNome" /> -->
+        <br />
+        <br />
+        🔠 MAISCULA
+        <input type="radio" name="chang" id="Upp" onclick="Maisculo();" />
+        <br />
+        🔤 minuscula
+        <input type="radio" name="chang" id="Down" onclick="Minusculo();" />
+        <br />
+        <br />
+        <!-- <input
+          name="Submit"
+          type="submit"
+          form="formularioNome"
+          value="Testar"
+        /> -->
+        <input
+          id="btnApagar"
+          name="Reset"
+          type="reset"
+          form="formularioNome"
+          value="Apagar"
+        />
+      </div>
+    </form>
+  </body>
+</html>

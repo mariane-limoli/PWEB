@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0px;
+  font-family: "Quicksand", Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+.topo {
+  background-image: linear-gradient(rgb(240, 224, 6), rgb(253, 255, 255));
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  background-position: top;
+  padding-bottom: 90px;
+}
+.topotext {
+  color: rgba(73, 73, 72, 0.637);
+  font-size: xx-large;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.logo {
+  height: 120px;
+  width: 120px;
+  border-radius: 50px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+}
+.container-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  font-weight: bold;
+}
+.box {
+  padding: 10px;
+  height: 30px;
+  font-size: x-large;
+
+  text-align: center;
+  border-radius: 6px;
+}
+.box:hover {
+  background-color: rgba(21, 22, 22, 0.822);
+  cursor: pointer;
+}
+a:hover {
+  color: rgb(250, 24, 24);
+}
+a {
+  text-decoration: none;
+  color: rgb(249, 250, 245);
+}
+.Home {
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  flex-basis: 20%;
+  background-color: rgba(228, 190, 20, 0.747);
+}
+
+.dinheiro {
+  border-radius: 50px;
+  flex-basis: 20%;
+  background-color: rgb(3, 175, 61);
+}
+.politica {
+  border-radius: 50px;
+  flex-basis: 20%;
+  background-color: rgba(214, 117, 20, 0.76);
+}
+.sorocaba {
+  border-radius: 50px;
+  border-top-left-radius: 0px;
+  flex-basis: 20%;
+  background-color: rgba(6, 130, 187, 0.596);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.destaques {
+  color: rgb(179, 11, 11);
+  width: 50%;
+  margin: 5px;
+  padding: 20px;
+  background-color: rgba(214, 18, 18, 0.082);
+  border-top-right-radius: 30px;
+}
+.ultimas {
+  color: rgb(5, 5, 156);
+  width: 50%;
+  margin: 5px;
+  padding: 20px;
+  background-color: rgba(0, 255, 255, 0.151);
+  border-top-left-radius: 30px;
+}
+p {
+  color: black;
+  text-indent: 22px;
+}
+
+h2 {
+  text-align: center;
+}
+h3 {
+  text-indent: 12px;
+}
+
+.imgdestaques {
+  width: 150px;
+  height: 150px;
+  opacity: 60%;
+  margin: 20px;
+}
+.imgultimas {
+  width: 120px;
+  height: 120px;
+  opacity: 60%;
+  margin: 20px;
+}

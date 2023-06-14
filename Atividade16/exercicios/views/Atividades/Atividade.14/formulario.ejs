@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="formulario.js"></script>
+    <link rel="stylesheet" href="formulario.css" />
+    <title>Atividade 14</title>
+  </head>
+  <body>
+    <main>
+      <form name="quiz" id="Quiz" onsubmit="send();">
+        <h1 class="tittle">Formulário Principal</h1>
+
+        <div class="input-wrapper">
+          <label for="name">Nome<br /></label>
+          <input type="text" name="name" id="Name" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="email">Email<br /></label>
+          <input type="email" name="email" id="Email" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="commentary">Comentários<br /></label>
+          <textarea
+            name="commentary"
+            id="Commentary"
+            cols="35"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <h3 class="subtittle">Pesquisa</h3>
+        <p>Primeira vez nesta página??</p>
+
+        <div class="inputs-wrapper">
+          <div class="input-wrapper">
+            <label for="yes">Sim</label>
+            <input type="radio" name="response" id="ResponseYes" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="yes">Não</label>
+            <input type="radio" name="response" id="ResponseNo" />
+          </div>
+        </div>
+        <button
+          class="buttonSubmit"
+          name="buttonSubmit"
+          type="submit"
+          form="Quiz"
+        >
+          Enivar
+        </button>
+        <button class="buttonReset" name="buttonReset" type="reset" form="Quiz">
+          Limpar
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
